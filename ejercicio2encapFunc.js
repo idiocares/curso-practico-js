@@ -1,14 +1,15 @@
 
 console.group("CUADRADO")
+
 function perimetroCuadrado(lado){
   return lado*4;
 }
 
-function areaCuadrado(lado){
-
-  return lado*lado;
-
+function areaCuadrado(lado) {
+  return lado * lado;
 }
+
+console.log(areaCuadrado(3))
 
 console.group("END")
 
@@ -40,4 +41,28 @@ function perimetroCirc(diametro){
 function areaCirc(radio){
 
   return Math.PI*(radio*radio);
+}
+
+console.group("END")
+
+
+function calcularPerimetroCuadrado(){
+
+ const input=document.getElementById("InputCuadrado");
+ const valor=input.value;
+ const perimetro=perimetroCuadrado(valor);
+ alert(perimetro);
+
+}
+
+function calcularAreaCuadrado(){
+
+  const input=document.getElementById("InputCuadrado");
+  const value=input.value;
+
+  const area=areaCuadrado(value);
+
+  alert(area);
+
+
 }

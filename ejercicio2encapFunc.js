@@ -114,3 +114,30 @@ function calcularAreaCirculo(){
   const area=areaCirc(radio);
   alert(area)
 }
+
+
+//RETO TRIANGULO ISOCELES
+
+function calcularAlturaTrianguloIs(){
+
+  const input1=document.getElementById("InputTtriangulo")
+  const input2=document.getElementById("InputTtriangulo2")
+  const input3=document.getElementById("InputTtriangulo3")
+
+  const lado1=parseInt(input1.value);
+  const lado2=parseInt(input2.value);
+  const  base=parseInt(input3.value);
+
+  const altura=alturaTrianguloIs(lado1,lado2,base)
+    alert(altura);
+}
+
+function alturaTrianguloIs(lado1,lado2,base){
+
+  if ((lado1===lado2)&&(lado1!=base)){
+
+    const altura= Math.sqrt(Math.pow(lado1,2)-Math.pow(base,2)/4)
+  }
+
+
+}

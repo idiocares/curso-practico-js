@@ -16,8 +16,8 @@ console.group("END")
 console.group("TRIANGULO")
 
 function perimetroTriangulo(lado1,lado2,base){
-
-  return lado1+lado2+base;
+  const valor=lado1 +lado2 + base;
+  return valor;
 
 }
 
@@ -32,7 +32,8 @@ console.group("END");
 
 console.group("CIRCULOS");
 
-function perimetroCirc(diametro){
+function perimetroCirc(radio){
+   const diametro=radio*2;
 
   return diametro*Math.PI;
 
@@ -63,6 +64,84 @@ function calcularAreaCuadrado(){
   const area=areaCuadrado(value);
 
   alert(area);
+}
+
+//CALCULO DEL AREA Y PERIMETRO DEL TRIANGULO
+
+function calcularPerimetroTriangulo(){
+
+  const input1=document.getElementById("InputTtriangulo")
+  const input2=document.getElementById("InputTtriangulo2")
+  const input3=document.getElementById("InputTtriangulo3")
+
+  const lado1=parseInt(input1.value);
+  const lado2=parseInt(input2.value);
+  const  base=parseInt(input3.value);
+
+  const perimetro=perimetroTriangulo(lado1,lado2,base)
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo(){
+  const input3=document.getElementById("InputTtriangulo3")
+  const input4=document.getElementById("InputTtriangulo4")
+
+  const  base=parseInt(input3.value);
+  const altura=parseInt(input4.value);
+
+  const area=areaTriangulo(base,altura);
+  alert(area);
+
+}
+
+//calculo Area y Perimetrod de un circulo
+
+function calcularPerimetroCirculo(){
+
+  const input=document.getElementById("inputCirculo")
+  const radio=parseInt(input.value)
+
+  const perimetro=perimetroCirc(radio)
+  alert(perimetro)
+
+}
+
+function calcularAreaCirculo(){
+
+  const input=document.getElementById("inputCirculo")
+  const radio=parseInt(input.value)
+
+  const area=areaCirc(radio);
+  alert(area)
+}
+
+
+//RETO TRIANGULO ISOCELES
+
+function calcularAlturaTrianguloIs(){
+
+  const input1=document.getElementById("InputTtriangulo")
+  const input2=document.getElementById("InputTtriangulo2")
+  const input3=document.getElementById("InputTtriangulo3")
+
+  const lado1=parseInt(input1.value);
+  const lado2=parseInt(input2.value);
+  const  base=parseInt(input3.value);
+
+  const altura=alturaTrianguloIs(lado1,lado2,base)
+    alert(altura);
+}
+
+function alturaTrianguloIs(lado1,lado2,base){
+
+  if ((lado1===lado2)&&(lado1!=base)){
+
+    const altura= Math.sqrt(Math.pow(lado1,2)-Math.pow(base,2)/4)
+    alert(altura)
+  }
+  else {
+    alert("error no es isoceles")
+  }
 
 
 }

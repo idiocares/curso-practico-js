@@ -23,7 +23,7 @@
 
       <form class="" action="index.html" method="post">
 
-        <label for="InputCuadrado">Escribir el valor de cada lado del cuadrado</label>
+    <label for="InputCuadrado">Escribir el valor de cada lado del cuadrado</label>
 
         <input id="InputCuadrado"type="number" name="" value="">
 
@@ -31,6 +31,31 @@
         <button type="button" name="button" onclick="calcularAreaCuadrado()">calcular area</button>
 
       </form>
+    </section>
+
+    <section>
+      <h2>Calculo del area y perimetro de un triangulo</h2>
+
+      <form class="" action="index.html" method="post">
+
+        <label for="InputTtriangulo">Escribir valor de cada lado del triangulo , caso de perimetro no indique Altura</label>
+        <input id="InputTtriangulo"type="number" placeholder="lado1">
+        <input id="InputTtriangulo2"type="number" placeholder="lado2">
+        <input id="InputTtriangulo3"type="number" placeholder="base">
+        <input id="InputTtriangulo4"type="number" placeholder="Altura">
+        <button type="button" name="button" onclick="calcularPerimetroTriangulo()">Calculo de perimetro</button>
+        <button type="button" name="button" onclick="calcularAreaTriangulo()">Calculo del area</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Calculo del area y perimetro de un circulo</h2>
+
+      <label for="inputCirculo">Escribirel radio del circulo para calcular perimetro y/o area</label>
+
+      <input id="inputCirculo"type="number" placeholder="radio">
+      <button type="button" onclick="calcularPerimetroCirculo()">calculo de perimetro</button>
+      <button type="button" onclick="calcularAreaCirculo()">calculo del area </button>
     </section>
 
     <script src="./ejercicio2encapFunc.js">

@@ -137,6 +137,10 @@ function alturaTrianguloIs(lado1,lado2,base){
   if ((lado1===lado2)&&(lado1!=base)){
 
     const altura= Math.sqrt(Math.pow(lado1,2)-Math.pow(base,2)/4)
+    alert(altura)
+  }
+  else {
+    alert("error no es isoceles")
   }
 
 

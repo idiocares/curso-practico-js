@@ -1,3 +1,43 @@
+const lista=[100 , 200 , 300,40000]
+
+function calculoMediana(lista){
+  const listaOrdenada=lista.sort((a,b)=>a-b);
+  
+  const mitadLista1=parseInt(lista.length/2) ;
+
+  let mediana;
+
+  if  (esPar(lista.length)){
+
+   const elto1=lista[mitadLista1];
+   const elto2=lista[mitadLista1-1];
+
+   const promedioMediana=calcularMediaAritmetica([elto1,elto2])
+
+   mediana=promedioMediana;
+
+  }
+  else {
+    mediana=lista[mitadLista1]
+  }
+
+
+}
+
+
+
+function esPar(num){
+
+  if (num %2===0){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+
+
 function calcularMediaAritmetica(lista){
 
   //let sumaLista1=0;
@@ -18,37 +58,4 @@ function calcularMediaAritmetica(lista){
 
   return promedioLista1
 
-}
-
-
-const lista=[100 , 200 , 300,40000]
-
-
-const mitadLista1=parseInt(lista.length/2) ;
-
-
-function esPar(num){
-
-  if (num %2===0){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
-
-let mediana;
-
-if  (esPar(lista.length)){
-
- const elto1=lista[mitadLista1];
- const elto2=lista[mitadLista1-1];
-
- const promedioMediana=calcularMediaAritmetica([elto1,elto2])
-
- mediana=promedioMediana;
-
-}
-else {
-  mediana=lista[mitadLista1]
 }

@@ -4,7 +4,7 @@ function calculoMediana(lista){
   const listaOrdenada=lista.sort((a,b)=>a-b);
   
   const mitadLista1=parseInt(lista.length/2) ;
-
+  
   let mediana;
 
   if  (esPar(lista.length)){

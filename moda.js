@@ -39,6 +39,8 @@ function calcularModa(lista){
 }
 
 ///CODIGO ANTERIOR PARA CALCULAR LA MODA 
+
+const listaCount={}
 lista.map(function(elto){
 
   if(listaCount[elto]){

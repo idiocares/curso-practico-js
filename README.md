@@ -22,3 +22,7 @@
 -Paso1: formulas de moda mediana y promedio
 -Paso2: implementacio js
 -Paso3: integracion html.
+
+## Taller 4 sobre analisis de salarios de Paises.
+
+-js , html.

@@ -1,4 +1,4 @@
-
+ 
 //Funcion promedio ponderado 
 //
 //
@@ -7,7 +7,7 @@ const notas= [{course:"gimnasia",nota:10,credito:2,},{course:"informatica",nota:
 
 const notasCredito=notas.map(function(noteObject){
 
-	return notesObject.nota*notesObject.credito;
+	return parseInt(noteObject.nota*noteObject.credito); //
 })
 
 
@@ -17,7 +17,7 @@ function sumaNotasCredito(notasCredito){
 
 	for (i=0;i<notasCredito.length;i++){
 
-             acum=acum+notasCredito[i];
+             acum=acum+parseInt(notasCredito[i]);  ///
 	
 	}
 
@@ -31,7 +31,7 @@ function sumaCreditos(notas){
 	
 	for (i=0;i<notas.length;i++){
 
-            suma=suma + notas.credito;
+            suma=suma + parseInt(notas.credito); //
 
 	}
 
@@ -44,11 +44,11 @@ function sumaCreditos(notas){
 function promedioPonderado(notas,notasCredito){
 
     
-         const notasCred=sumaNotasCredito(notasCredito)
+         const int notasCred=sumaNotasCredito(notasCredito)
 
-         const sumaCredito=sumaCreditos(notas);
+         const int sumaCredito=sumaCreditos(notas);
 
-	 return notasCredito/sumaCredito;
+	 return double notasCredito/sumaCredito;
 
 
 }
